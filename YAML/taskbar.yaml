@@ -1,0 +1,206 @@
+theme: ''
+controlStyles:
+  - target: Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill:=$mbg
+  - target: Taskbar.TaskListButtonPanel#ExperienceToggleButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - CornerRadius=$bcr
+  - target: Taskbar.ExperienceToggleButton
+    styles:
+      - CornerRadius=$bcr
+  - target: Taskbar.TaskListButton
+    styles:
+      - CornerRadius=$bcr
+  - target: SearchUx.SearchUI.SearchButtonRootGrid#SearchBoxButtonRootPanel > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.Border#SearchPillBackgroundElement
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.Border#MultiWindowElement
+    styles:
+      - CornerRadius=$bcr
+      - Margin=0,1,0,1
+  - target: SystemTray.ChevronIconView
+    styles:
+      - CornerRadius=$bcr
+      - Margin=0,0,2,0
+  - target: SystemTray.NotifyIconView > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$bcr
+      - Margin=2,4,2,4
+  - target: SystemTray.IconView#SystemTrayIcon > Windows.UI.Xaml.Controls.Grid#ContainerGrid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$bcr
+      - Margin=2,4,2,4
+  - target: SystemTray.OmniButton#ControlCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$bcr
+      - Margin=2,4,2,4
+  - target: SystemTray.OmniButton#NotificationCenterButton > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Controls.Border#BackgroundBorder
+    styles:
+      - CornerRadius=$bcr
+      - Margin=2,4,2,4
+  - target: Border#OverflowFlyoutBackgroundBorder
+    styles:
+      - Background:=$mbg
+      - CornerRadius:=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#ConfirmatorMainGrid
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Windows.UI.Xaml.Shapes.Rectangle#HorizontalTrackRect
+    styles:
+      - Fill:=#10FFFFFF
+  - target: Taskbar.TaskbarBackground#HoverFlyoutBackgroundControl > Grid > Rectangle#BackgroundFill
+    styles:
+      - Fill:=$t
+  - target: Windows.UI.Xaml.Controls.Grid#HoverFlyoutGrid > Windows.UI.Xaml.Controls.Border#HoverFlyoutBackground
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Taskbar.TaskItemThumbnailView > Grid@CommonStates > Border#BackgroundBorder
+    styles:
+      - Background=$t
+      - CornerRadius=$mcr
+      - BorderThickness@Normal=0
+      - BorderBrush@Normal=$t
+      - BorderThickness@PointerOver=0.05,0,0.05,2
+      - BorderBrush@PointerOver:=<SolidColorBrush Color="{StaticResource SystemAccentColor}" Opacity="0.8" />
+  - target: Windows.UI.Xaml.Controls.Button#CloseButton
+    styles:
+      - CornerRadius=$mcr
+  - target: Windows.UI.Xaml.Controls.ContentPresenter#BorderElement
+    styles:
+      - CornerRadius=16
+      - Margin=-1,-1,-1,-1
+  - target: Windows.UI.Xaml.Controls.Grid#ModalRootGrid > Windows.UI.Xaml.Controls.Border#BackgroundElement
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Border#BackgroundDimmingLayer
+    styles:
+      - Background:=<WindhawkBlur BlurAmount="0" TintColor="#00000000" />
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar > Grid > Border
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$wcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+  - target: WindowsInternal.ComposableShell.Experiences.Switcher.VirtualDesktopBarElement#VirtualDesktopBar
+    styles:
+      - MaxWidth:=900
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Grid#MainGrid
+    styles:
+      - CornerRadius=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+  - target: Windows.UI.Xaml.Controls.Button#VirtualDesktopElementCloseButton
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.Border#SnapBarBorder
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$mcr
+      - RenderTransform:=<TranslateTransform X="0" Y="-20" />
+      - Margin=0,0,0,-10
+      - Shadow:=
+  - target: Windows.UI.Xaml.Controls.Border#SnapPickerBorder
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+  - target: Windows.UI.Xaml.Controls.FlyoutPresenter > Border
+    styles:
+      - Shadow:=
+  - target: MenuFlyoutPresenter
+    styles:
+      - CornerRadius=$mcr
+      - Shadow:=
+  - target: MenuFlyoutPresenter > Border
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.MenuFlyoutSubItem
+    styles:
+      - CornerRadius=$bcr
+  - target: Windows.UI.Xaml.Controls.ToolTip > Windows.UI.Xaml.Controls.ContentPresenter#LayoutRoot
+    styles:
+      - Background:=$mbg
+      - CornerRadius=$mcr
+      - BorderThickness=$bt
+      - BorderBrush=$bb
+      - Shadow:=
+  - target: Grid#LayoutRoot
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Border#BackgroundBorder
+    styles:
+      - BackgroundTransition:=<BrushTransition Duration="0:0:0.100" />
+  - target: Taskbar.TaskbarFrame > Grid#RootGrid > Taskbar.TaskbarBackground > Grid > Rectangle#BackgroundFill
+    styles:
+      - Visibility=Collapsed
+  - target: Taskbar.TaskbarFrame#TaskbarFrame
+    styles:
+      - Height=53
+      - Margin=250,0,250,0
+  - target: Taskbar.TaskbarFrame#TaskbarFrame > Grid#RootGrid
+    styles:
+      - Background:=$mbg
+      - BorderThickness=$bt
+      - BorderBrush:=$bb
+      - CornerRadius=$mcr
+      - Margin=0,0,500,5
+  - target: Taskbar.TaskbarBackground#BackgroundControl > Windows.UI.Xaml.Controls.Grid > Windows.UI.Xaml.Shapes.Rectangle#BackgroundStroke
+    styles:
+      - Visibility=Collapsed
+  - target: Grid#SystemTrayFrameGrid
+    styles:
+      - Margin=-307,-2,250,4
+      - HorizontalAlignment=Right
+  - target: Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel@CommonStates > Windows.UI.Xaml.Controls.ContentPresenter#CustomInjectedPresenter
+    styles:
+      - Content@InactivePointerOver:=$StartOpen
+      - Content@InactiveNormal:=$StartIcon
+      - Content@ActivePressed:=$PressedIcon
+      - Content@ActivePointerOver:=$StartOpen
+      - Content@InactivePressed:=$PressedIcon
+      - Content@ActiveNormal:=$StartOpen
+  - target: 'Taskbar.ExperienceToggleButton#LaunchListButton[AutomationProperties.AutomationId=StartButton] > Taskbar.TaskListButtonPanel > Microsoft.UI.Xaml.Controls.AnimatedVisualPlayer#Icon '
+    styles:
+      - 'Visibility=Collapsed '
+styleConstants:
+  - mbg=<AcrylicBrush TintColor="{ThemeResource CardStrokeColorDefaultSolid}" FallbackColor="{ThemeResource CardStrokeColorDefaultSolid}" TintOpacity="0.0" TintLuminosityOpacity="1.0" Opacity="1"/>
+  - bcr=5
+  - wcr=10
+  - mcr=7
+  - t=Transparent
+  - bb=#20FFFFFF
+  - bt=1
+  - AnimationSettings=<TransitionCollection><EntranceThemeTransition IsStaggeringEnabled="True" FromHorizontalOffset="-50" FromVerticalOffset="50" /></TransitionCollection>
+  - StartIcon=<Image Width="20" Height="20" Source="file:///C:\Customization\Icons\Start Button\StarNormal.png" />
+  - PressedIcon=<Image Width="18.5" Height="18.5" Source="file:///C:\Customization\Icons\Start Button\StarPressed.png" />
+  - StartOpen=<Image Width="20" Height="20" Source="file:///C:\Customization\Icons\Start Button\StarHover.gif" />
+resourceVariables:
+  - variableKey: ''
+    value: ''
